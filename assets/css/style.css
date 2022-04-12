@@ -199,7 +199,8 @@ section .container>* {
 
 .title {
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 30px;
+    letter-spacing: 2px;
     margin-bottom: 1rem;
     padding-bottom: .5rem;
     position: relative;
@@ -278,8 +279,57 @@ section .container>* {
     width: 75%;
 }
 
-.font-nautigal{
+.font-nautigal {
     font-family: 'The Nautigal', cursive;
+}
+
+.bar-70 {
+    color: #000;
+    background-color: #fff;
+    width: 70%;
+    height: 20px;
+}
+
+.bar-75 {
+    color: #000;
+    background-color: #fff;
+    width: 75%;
+    height: 20px;
+}
+
+.bar-80 {
+    color: #000;
+    background-color: #fff;
+    width: 80%;
+    height: 20px;
+}
+
+.bar-85 {
+    color: #000;
+    background-color: #fff;
+    width: 85%;
+    height: 20px;
+}
+
+.bar-90 {
+    color: #000;
+    background-color: #fff;
+    width: 90%;
+    height: 20px;
+}
+
+.bar-95 {
+    color: #000;
+    background-color: #fff;
+    width: 95%;
+    height: 20px;
+}
+
+.bar-100 {
+    color: #000;
+    background-color: #fff;
+    width: 100%;
+    height: 20px;
 }
 
 @media (max-width: 850px) {
@@ -297,7 +347,7 @@ section .container>* {
 
     .big-sub-title {
         text-transform: uppercase;
-        top: calc(50% - 2rem);
+        top: calc(47% - 2rem);
         font-size: 2rem;
     }
 
@@ -310,6 +360,7 @@ section .container>* {
     }
 
     .title {
-        font-size: 1.2rem;
+        font-size: 30px;
+        letter-spacing: 2px;
     }
 }
