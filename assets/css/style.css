@@ -206,7 +206,26 @@ section .container>* {
     position: relative;
 }
 
-.company-title {
+.beg-title {
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+}
+
+.beg-subtitle {
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.beg-description {
+    font-size: 17px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.beg-title {
     font-weight: 600;
     font-size: 20px;
     position: relative;
@@ -330,6 +349,19 @@ section .container>* {
     background-color: #fff;
     width: 100%;
     height: 20px;
+}
+
+.icon-circle {
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.contact-detail{
+    font-size: 18px;
+}
+
+.decoration-none{
+    text-decoration: none;
 }
 
 @media (max-width: 850px) {
