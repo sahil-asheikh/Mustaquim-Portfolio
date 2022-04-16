@@ -440,8 +440,7 @@ section .container>* {
 
     .big-sub-title {
         text-transform: uppercase;
-        top: calc(47% - 1rem);
-        /* font-size: 2rem; */
+        top: calc(45% - 10px);
         font-size: 20px;
     }
 
