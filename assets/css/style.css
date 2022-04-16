@@ -154,6 +154,13 @@ nav .container {
     color: #fff;
 }
 
+.big-title:hover {
+    text-decoration: underline;
+    text-decoration-color: #C15097;
+    text-decoration-thickness: 5px;
+    cursor: pointer;
+}
+
 .big-sub-title {
     position: absolute;
     z-index: 30;
@@ -199,7 +206,7 @@ section .container>* {
 
 .title {
     font-weight: 600;
-    font-size: 30px;
+    font-size: 40px;
     letter-spacing: 2px;
     margin-bottom: 1rem;
     padding-bottom: .5rem;
@@ -356,12 +363,59 @@ section .container>* {
     padding: 10px;
 }
 
-.contact-detail{
+.contact-detail {
     font-size: 18px;
 }
 
-.decoration-none{
+.decoration-none {
     text-decoration: none;
+}
+
+.service {
+    background-color: #212529;
+    width: fit-content;
+}
+
+.service:hover {
+    background-color: #313134;
+    text-decoration: underline;
+    text-decoration-color: #C15097;
+    text-decoration-thickness: 2px;
+    cursor: pointer;
+}
+
+.btn-contact {
+    background-color: #212529;
+}
+
+.btn-contact:hover {
+    background-color: #313134;
+    text-decoration: underline;
+    text-decoration-color: #C15097;
+    text-decoration-thickness: 2px;
+    border-radius: 5px;
+}
+
+.navbar-hover {
+    cursor: pointer;
+}
+
+.navbar-hover:hover {
+    text-decoration: underline;
+    text-decoration-color: #C15097;
+    text-decoration-thickness: 2px;
+}
+
+.social-icons {
+    color: #fff;
+}
+
+.social-icons:hover {
+    color: #C15097;
+}
+
+.bg-none {
+    background-color: transparent;
 }
 
 @media (max-width: 850px) {
@@ -377,10 +431,18 @@ section .container>* {
         font-size: 2.5rem;
     }
 
+    .big-title:hover {
+        text-decoration: underline;
+        text-decoration-color: #C15097;
+        text-decoration-thickness: 3px;
+        cursor: pointer;
+    }
+
     .big-sub-title {
         text-transform: uppercase;
-        top: calc(47% - 2rem);
-        font-size: 2rem;
+        top: calc(47% - 1rem);
+        /* font-size: 2rem; */
+        font-size: 20px;
     }
 
     .about-img {
