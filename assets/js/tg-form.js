@@ -5,14 +5,12 @@ document.querySelector("form.pure-form")
 
         // to get date and time
         var today = new Date();
-        var date =
-            today.getFullYear() +
+        var date = today.getFullYear() +
             "-" +
             (today.getMonth() + 1) +
             "-" +
-            today.getDate() +
-            "::::" +
-            today.getHours() +
+            today.getDate();
+        var time = today.getHours() +
             "-" +
             today.getMinutes() +
             "-" +
@@ -44,16 +42,20 @@ document.querySelector("form.pure-form")
             // return false;
         } else {
             var send_message =
-                date +
-                "%0A%0A<b>Name:</b> " +
+                "Hey Mustaquim, you have a contact details from a new client!!!%0A%0A" +
+                "<b>Name:</b> " +
                 nameInput +
                 "%0A<b>Email:</b> " +
                 emailInput +
                 "%0A<b>Message:</b> " +
-                message;
+                message +
+                "%0A<b>Date:</b> " +
+                date +
+                "%0A<b>Time:</b> " +
+                time;
 
             // declearing bot token and chat id
-            var bot_token = "5158312648:AAFQYMf2CAhdLxpdFXOJpy1S1FPDclW7Hc0"; // bot token
+            var bot_token = "5075396560:AAHWyWBpz7xpWO1Wa3KGrEnA3appEzkBC88"; // bot token
             var chat_id = 788765432; // my chat id
 
             // creating url using bot token, chat id and message
@@ -71,6 +73,11 @@ document.querySelector("form.pure-form")
 
             // loading status
             var loadingMsg = document.getElementById("loading-message");
+            var sentMsg = document.getElementById("sent-message");
+            var errorMsg = document.getElementById("error-message");
+
+            sentMsg.style.display = "none";
+            errorMsg.style.display = "none";
             loadingMsg.style.display = "block";
 
             // sending request
@@ -92,12 +99,10 @@ document.querySelector("form.pure-form")
 
                     // conditions to show response messages
                     if (uploadResult === true) {
-                        var sentMsg = document.getElementById("sent-message");
                         loadingMsg.style.display = "none";
                         sentMsg.style.display = "block";
                         console.log("successfully uploaded file");
                     } else {
-                        var errorMsg = document.getElementById("error-message");
                         loadingMsg.style.display = "none";
                         errorMsg.style.display = "block";
                         console.log("failed to upload file");
