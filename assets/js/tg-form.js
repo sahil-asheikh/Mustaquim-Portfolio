@@ -107,6 +107,10 @@ document.querySelector("form.pure-form")
                         errorMsg.style.display = "block";
                         console.log("failed to upload file");
                     }
+                } else {
+                    loadingMsg.style.display = "none";
+                    errorMsg.style.display = "block";
+                    console.log("failed to upload file");
                 }
             };
         }
