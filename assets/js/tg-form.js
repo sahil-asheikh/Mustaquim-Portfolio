@@ -42,7 +42,7 @@ document.querySelector("form.pure-form")
             // return false;
         } else {
             var send_message =
-                "Hey Mustaquim, you have a contact details from a new client!!!%0A%0A" +
+                "Hey Mustaquim, you have a contact detail from a new client!!!%0A%0A" +
                 "<b>Name:</b> " +
                 nameInput +
                 "%0A<b>Email:</b> " +
@@ -106,11 +106,13 @@ document.querySelector("form.pure-form")
                         loadingMsg.style.display = "none";
                         errorMsg.style.display = "block";
                         console.log("failed to upload file");
+                        console.log("xhttp.readyState=", xhttp.readyState);
+                        console.log("xhttp.status=", xhttp.status);
                     }
                 } else {
-                    loadingMsg.style.display = "none";
-                    errorMsg.style.display = "block";
                     console.log("failed to upload file");
+                    console.log("xhttp.readyState=", xhttp.readyState);
+                    console.log("xhttp.status=", xhttp.status);
                 }
             };
         }
